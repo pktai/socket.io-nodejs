@@ -25,8 +25,8 @@ io.on('connection', function(socket){
   console.log('a user connected');
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
 });
 io.on('connection', function(socket){
     socket.on('chat message', function(msg){
