@@ -1,4 +1,5 @@
 {
+  "start":"node index.js"
   "name": "socketio",
   "version": "1.0.0",
   "description": "",
